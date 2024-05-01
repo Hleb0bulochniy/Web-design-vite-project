@@ -9,6 +9,8 @@ namespace back_1._2.Data
         public DbSet<User> Users { get; set; } = null!;
         public DbSet<Address> Address { get; set; } = null!;
         public DbSet<AddressInUser> AddressInUsers { get; set; } = null!;
+        public DbSet<Item> Items { get; set; } = null!;
+        public DbSet<ItemsInUser> ItemsInUser { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

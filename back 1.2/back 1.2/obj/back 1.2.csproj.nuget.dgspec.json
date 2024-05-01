@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\back 1.2.csproj": {}
+    "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\back 1.2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\back 1.2.csproj": {
+    "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\back 1.2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\back 1.2.csproj",
+        "projectUniqueName": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\back 1.2.csproj",
         "projectName": "back 1.2",
-        "projectPath": "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\back 1.2.csproj",
+        "projectPath": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\back 1.2.csproj",
         "packagesPath": "C:\\Users\\sacho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\obj\\",
+        "outputPath": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,33 +69,9 @@
               "target": "Package",
               "version": "[8.0.2, )"
             },
-            "Microsoft.Extensions.Caching.Memory": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.Extensions.Caching.SqlServer": {
-              "target": "Package",
-              "version": "[8.0.4, )"
-            },
-            "Microsoft.Extensions.Caching.StackExchangeRedis": {
-              "target": "Package",
-              "version": "[8.0.4, )"
-            },
-            "SharpAbp.Abp.OpenTelemetry.Exporter.Prometheus.HttpListener": {
-              "target": "Package",
-              "version": "[3.3.0, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
-            },
-            "prometheus-net.AspNetCore": {
-              "target": "Package",
-              "version": "[8.2.1, )"
-            },
-            "prometheus-net.AspNetCore.HealthChecks": {
-              "target": "Package",
-              "version": "[8.2.1, )"
             }
           },
           "imports": [

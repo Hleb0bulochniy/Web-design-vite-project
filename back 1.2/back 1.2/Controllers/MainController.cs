@@ -4,6 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Identity.Client;
 using System.Text.Json;
 using back_1._2.Models;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System;
+using Microsoft.AspNetCore.Authorization;
 
 namespace back_1._2.Controllers
 {
@@ -156,5 +161,115 @@ namespace back_1._2.Controllers
             return $"Регистрация прошла успешно\nID: {user.Id}\nИмя: {user.Name}\nПочта: {user.Email}\nПароль: {user.Password}";
             
         }
+    }
+
+    [Route("UserRegistration2")]
+    public class RegistrationController2 : Controller
+    {
+        [HttpPost]
+        public string Index62()
+        {
+            UserContext context = new UserContext();
+            Item item = new Item() { Name = "Хвоя", Price = "549", Description = "Натуральное мыло со вкусом хвои - вдохновленное свежестью лесных прогулок. Очищает кожу, оставляя нежный аромат свежести и спокойствия. Погрузитесь в атмосферу природы каждый раз, когда пользуетесь этим мылом.", Image = "https://localhost:7287/pine.png" }; //ID устанавливается сам
+            context.Items.Add(item);
+            context.SaveChanges();
+            return $"Регистрация прошла успешно";
+
+        }
+    }
+    //Web2item pine = new Web2item(1, "Хвоя", "549", "Натуральное мыло со вкусом хвои - вдохновленное свежестью лесных прогулок. Очищает кожу, оставляя нежный аромат свежести и спокойствия. Погрузитесь в атмосферу природы каждый раз, когда пользуетесь этим мылом.", "https://localhost:7287/pine.png");
+    //Web2item blue = new Web2item(2, "Голубика", "549", "Нежное мыло с ароматом голубики - воплощение летней свежести и яркости. Очищает кожу, оставляя приятное ощущение мягкости и аромата свежесорванной ягоды. Придайте своему уходу особый шарм с этим ароматическим мылом!", "https://localhost:7287/blueberry.png");
+    //Web2item cofe = new Web2item(3, "Кофе", "549", "Ароматное мыло с натуральным экстрактом кофе - бодрящее утро для вашей кожи. Очищает и тонизирует, придавая энергию и освежающий аромат свежесваренного кофе. Начните день с приятного кофейного настроения благодаря этому уникальному мылу!", "https://localhost:7287/coffee.png");
+    //Web2item stra = new Web2item(4, "Клубника", "549", "Натуральное мыло с ароматом спелой клубники - роскошное увлажнение и свежесть для вашей кожи. Очищает и питает, придавая нежный аромат ягодного лета. Превратите ритуал умывания в настоящее удовольствие с этим ароматическим мылом!", "https://localhost:7287/strawberry.png");
+
+
+    [Route("UserRegistrationWeb")]
+    public class RegistrationWebController : Controller
+    {
+        [HttpPost]
+        public string Index7([FromBody] RegisterModel model)
+        {
+            if (model.Password == model.Password2)
+            {
+                UserContext context = new UserContext();
+                User user = new User() { Name = model.Name, Email = model.Email, Password = model.Password };
+                context.Users.Add(user);
+                context.SaveChanges();
+                return $"Регистрация прошла успешно";
+            }
+            else
+            {
+                return $"Что-то пошло не так";
+            }
+        }
+    }
+
+    [Route("UserLoginWeb")]
+    public class LiginWebController : Controller
+    {
+        [HttpPost]
+        public IActionResult Index8([FromBody] LoginModel model)
+        {
+            UserContext context = new UserContext();
+            User user = new User() { Name = "", Email = model.Email, Password = model.Password };
+            User? dbuder = context.Users.FirstOrDefault(u => ((u.Email == user.Email) & (u.Password == user.Password)));
+            if (dbuder == null) return BadRequest("Пользователя с такой почтой не существует. Совершите регистрацию");
+            if (dbuder.Password != user.Password) BadRequest("Пароль не совпадает");
+
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimsIdentity.DefaultNameClaimType, dbuder.Email),
+            };
+
+            var jwt = new JwtSecurityToken(
+            issuer: AuthOptions.ISSUER,
+            audience: AuthOptions.AUDIENCE,
+            claims: claims,
+            expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(5)),
+            signingCredentials: new SigningCredentials(AuthOptions.GetSymmetricSecurityKey(), SecurityAlgorithms.HmacSha256));
+            var encodedJwt = new JwtSecurityTokenHandler().WriteToken(jwt);
+
+            var jwtr = new JwtSecurityToken(
+            issuer: AuthOptions.ISSUER,
+            audience: AuthOptions.AUDIENCE,
+            claims: claims,
+            expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(5)),
+            signingCredentials: new SigningCredentials(AuthOptions.GetSymmetricSecurityKey(), SecurityAlgorithms.HmacSha256));
+            var encodedJwtr = new JwtSecurityTokenHandler().WriteToken(jwt);
+
+            var response = new
+            {
+                access_token = encodedJwt,
+                refresh_token = encodedJwtr,
+                username = dbuder.Email
+            };
+            return Ok(response);
+        }
+    }
+
+    [Route("CheckWeb")]
+    public class CheckController : Controller
+    {
+        [HttpPost]
+        [Authorize]
+        public IActionResult  Index9()
+        {
+            Console.WriteLine("Кто-то зашел");
+            return Ok();
+        }
+    }
+
+    public class RegisterModel
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string Password2 { get; set; }
+    }
+
+    public class LoginModel
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
     }
 }

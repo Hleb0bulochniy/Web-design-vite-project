@@ -16,5 +16,6 @@ namespace back_1._2.Models
         public string Password { get; set; } = null!;
 
         public ICollection<AddressInUser> AddressInUsers { get; set; } = null!;
+        public ICollection<ItemsInUser> ItemsInUser { get; set; } = null!;
     }
 }

@@ -14,7 +14,7 @@
       "commandName": "Project",
       "launchBrowser": true,
       "commandLineArgs": "course=BackEnd number=6",
-      "launchUrl": "swagger",
+      "launchUrl": "config",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

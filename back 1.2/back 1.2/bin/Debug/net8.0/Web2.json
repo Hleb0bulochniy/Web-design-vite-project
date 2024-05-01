@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Хвоя",
+    "price": 549,
+    "image": "/pine.png"
+  },
+  {
+    "id": 2,
+    "title": "Голубика",
+    "price": 549,
+    "image": "/blueberry.png"
+  },
+  {
+    "id": 3,
+    "title": "Кофе",
+    "price": 549,
+    "image": "/coffee.png"
+  },
+  {
+    "id": 4,
+    "title": "Клубника",
+    "price": 549,
+    "image": "/strawberry.png"
+  }
+]

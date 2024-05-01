@@ -73,6 +73,66 @@ namespace back_1._2.Migrations
                     b.ToTable("AddressInUsers");
                 });
 
+            modelBuilder.Entity("back_1._2.Models.Item", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("id");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("description");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("image");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("name");
+
+                    b.Property<string>("Price")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("price");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Items");
+                });
+
+            modelBuilder.Entity("back_1._2.Models.ItemsInUser", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("isFavourite")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("itemId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("itemId");
+
+                    b.ToTable("ItemsInUser");
+                });
+
             modelBuilder.Entity("back_1._2.Models.User", b =>
                 {
                     b.Property<int>("Id")
@@ -121,14 +181,40 @@ namespace back_1._2.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("back_1._2.Models.ItemsInUser", b =>
+                {
+                    b.HasOne("back_1._2.Models.User", "User")
+                        .WithMany("ItemsInUser")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("back_1._2.Models.Item", "item")
+                        .WithMany("ItemsInUser")
+                        .HasForeignKey("itemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+
+                    b.Navigation("item");
+                });
+
             modelBuilder.Entity("back_1._2.Models.Address", b =>
                 {
                     b.Navigation("AddressInUsers");
                 });
 
+            modelBuilder.Entity("back_1._2.Models.Item", b =>
+                {
+                    b.Navigation("ItemsInUser");
+                });
+
             modelBuilder.Entity("back_1._2.Models.User", b =>
                 {
                     b.Navigation("AddressInUsers");
+
+                    b.Navigation("ItemsInUser");
                 });
 #pragma warning restore 612, 618
         }

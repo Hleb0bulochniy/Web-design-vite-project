@@ -1,27 +1,17 @@
 using Azure;
-using Azure.Core;
 using back_1._2;
-using back_1._2.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authentication.OAuth;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components.Web;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Rewrite;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Distributed;
-using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
-using Prometheus;
 using System;
-using System.Diagnostics.Contracts;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -69,20 +59,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Logging.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "logger.txt"));
-builder.Services.AddDistributedMemoryCache();
-builder.Services.AddSession();
-
-
-builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer("Data Source=MSI\\SQLEXPRESS;Initial Catalog=Backend12;Persist Security Info=True;User ID=daniil;Password=test;Encrypt=True;Trust Server Certificate=True"));
-builder.Services.AddTransient<UserService>();
-builder.Services.AddMemoryCache();
-/*builder.Services.AddStackExchangeRedisCache(options => {
-    options.Configuration = "localhost";
-    options.InstanceName = "local";
-});*/
-//builder.Services.AddResponseCompression(options => options.EnableForHttps = true);
-builder.Services.AddOutputCache();
-
 
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
@@ -90,86 +66,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.Environment.EnvironmentName = "Production";
-
-//app.UseResponseCompression();
-app.UseOutputCache();
-
-//app.UseHttpMetrics();
-//app.MapMetrics();
-app.UseMetricServer("/metrics");
-
-var rewriteOptions = new RewriteOptions();
-rewriteOptions.Add(RewriteAccessRules);
-rewriteOptions.Add(RewriteAccessRules);
-
-app.UseRewriter(rewriteOptions);
-
-
-
-
-void RewriteAccessRules(RewriteContext context)
-{
-    var user = context.HttpContext.User;
-
-
-    if (context.HttpContext.Request.Path.StartsWithSegments("/admin1") && !user.IsInRole("admin"))
-    {
-        context.HttpContext.Response.Redirect("/AccessDenied");
-    }
-    else if (context.HttpContext.Request.Path.StartsWithSegments("/user1") && !(user.IsInRole("user") | user.IsInRole("admin")))
-    {
-        context.HttpContext.Response.Redirect("/login1");
-    }
-    else if (context.HttpContext.Request.Path.StartsWithSegments("/myrights"))
-    {
-        if (user.IsInRole("admin"))
-        {
-            context.HttpContext.Response.Redirect("/myrightsforadmin");
-            context.Result = RuleResult.EndResponse;
-        }
-        else if (user.IsInRole("user"))
-        {
-            context.HttpContext.Response.Redirect("/myrightsforuser");
-            context.Result = RuleResult.EndResponse;
-        }
-        else
-        {
-            context.HttpContext.Response.Redirect("/login1");
-            context.Result = RuleResult.EndResponse;
-        }
-    }
-}
-
-
-
-
-/*app.UseStatusCodePages(async statusCodeContext =>
-{
-    var response = statusCodeContext.HttpContext.Response;
-    var path = statusCodeContext.HttpContext.Request.Path;
-
-    response.ContentType = "text/plain; charset=UTF-8";
-    if (response.StatusCode == 404)
-    {
-        await response.WriteAsync($"Resource {path} Not Found");
-    }
-    else if (response.StatusCode == 500)
-    {
-        await response.WriteAsync($"Something wrong, please contact us.");
-    }
-});*/
-
-//app.UseStatusCodePagesWithRedirects("/error/{0}");
-app.UseStatusCodePagesWithReExecute("/error/{0}");
-
-app.UseSession();
 
 app.UseHttpsRedirection();
 
 app.MapControllers();
-
-
 
 //маршруты из прошлых лабораторных
 app.Map("/hello", SendHello);
@@ -245,8 +145,7 @@ app.MapPost("/login1", async (string? returnUrl, HttpContext context) =>
     };
     return Results.Json(response);
 });
-
-app.Map("/data", [Authorize] () => new { message = "Every user can access this" });
+app.Map("/data", [Authorize] () => new { message = "Every user can access this" }) ;
 app.Map("/admin", [Authorize(Roles = "admin")] () => "Admin Panel");
 app.Map("/", [Authorize(Roles = "admin, user")] (HttpContext context) =>
 {
@@ -274,7 +173,7 @@ app.Map("/{items}/message", (string items) => $"1"); //из-за разной приоритетнос
 app.Map("/items10/{message?}", (string? message) => $"2");
 app.Map("/items10", () => "Index Page");
 
-app.MapGet("/user", ([AsParameters] Item item) => $"id: {item.id} description: {item.description}"); //можно использовать атрибуты
+//app.MapGet("/user", ([AsParameters] Item item) => $"id: {item.id} description: {item.description}"); //можно использовать атрибуты
 
 
 //app.Map("/items", () => "Store page");
@@ -282,6 +181,7 @@ app.MapGet("/user", ([AsParameters] Item item) => $"id: {item.id} description: {
 
 //CORS below
 //app.UseCors(builder => builder.WithOrigins("https://localhost:7281").WithHeaders("custom-header").WithMethods("DELETE").AllowCredentials());
+app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 /*app.Run(async (context) =>
 {
     var a = context.Request.Cookies["a"];  // получаем отправленные куки
@@ -299,17 +199,8 @@ app.UseStaticFiles(new StaticFileOptions()
 {
     FileProvider = new PhysicalFileProvider(
             Path.Combine(Directory.GetCurrentDirectory(), @"Content")),
-    RequestPath = new PathString("/pages"),
-
+    RequestPath = new PathString("/pages")
 });
-app.UseStaticFiles(new StaticFileOptions()
-{
-    OnPrepareResponse = ctx =>
-    {
-        ctx.Context.Response.Headers.Add("Cache-Control", "public,max-age=600");
-    }
-});
-
 
 //builder.Configuration.AddJsonFile("conf.json");
 //builder.Configuration.AddXmlFile("conf.xml");
@@ -356,87 +247,34 @@ app.Map("/4", (HttpContext context) =>
     return $"4";
 });
 
-app.Map("/lab8Set", (HttpContext context) =>
+app.Map("/web2additem", async (HttpContext context) =>
 {
-    context.Session.SetString("LabNum", "8");
-    return ("Данные с сервера загружены");
-});
-app.Map("/lab8Get", (HttpContext context) =>
-{
-    return ($"Лабораторная работа номер {context.Session.GetString("LabNum")}");
-});
-app.Map("/lab8", (HttpContext context) =>
-{
-    if (context.Session.Keys.Contains("LabNum"))
-        return ($"Лабораторная работа номер {context.Session.GetString("LabNum")}");
-    else
-    {
-        context.Session.SetString("LabNum", "8");
-        return ("Данные с сервера загружены");
-    }
-});
-app.Map("/lab8Student", (HttpContext context) =>
-{
-    if (context.Session.Keys.Contains("student"))
-    {
-        Student? student = context.Session.Get<Student>("student");
-        return ($"Выполняет {student?.Name} из группы {student?.Group}");
-    }
-    else
-    {
-        Student student = new Student("Даниил Сашенков", "221-379");
-        context.Session.Set<Student>("student", student);
-        return ("Данные с сервера загружены");
-    }
+    Web2item pine = new Web2item(1, "Хвоя", "549", "Натуральное мыло со вкусом хвои - вдохновленное свежестью лесных прогулок. Очищает кожу, оставляя нежный аромат свежести и спокойствия. Погрузитесь в атмосферу природы каждый раз, когда пользуетесь этим мылом.", "https://localhost:7287/pine.png");
+    Web2item blue = new Web2item(2, "Голубика", "549", "Нежное мыло с ароматом голубики - воплощение летней свежести и яркости. Очищает кожу, оставляя приятное ощущение мягкости и аромата свежесорванной ягоды. Придайте своему уходу особый шарм с этим ароматическим мылом!", "https://localhost:7287/blueberry.png");
+    Web2item cofe = new Web2item(3, "Кофе", "549", "Ароматное мыло с натуральным экстрактом кофе - бодрящее утро для вашей кожи. Очищает и тонизирует, придавая энергию и освежающий аромат свежесваренного кофе. Начните день с приятного кофейного настроения благодаря этому уникальному мылу!", "https://localhost:7287/coffee.png");
+    Web2item stra = new Web2item(4, "Клубника", "549", "Натуральное мыло с ароматом спелой клубники - роскошное увлажнение и свежесть для вашей кожи. Очищает и питает, придавая нежный аромат ягодного лета. Превратите ритуал умывания в настоящее удовольствие с этим ароматическим мылом!", "https://localhost:7287/strawberry.png");
+    List<Web2item> itemsList = new List<Web2item>();
+    itemsList.Add( pine );
+    itemsList.Add( blue );
+    itemsList.Add( cofe );
+    itemsList.Add( stra );
+    var jsonResult = JsonSerializer.Serialize(itemsList);
+    context.Response.ContentType = "application/json";
+    await context.Response.WriteAsync(jsonResult);
+    return;
 });
 
-if (!app.Environment.IsDevelopment())
+app.Map("/hrt", [Authorize] async (HttpContext context) =>
 {
-    app.UseExceptionHandler(app => app.Run(async context =>
-    {
-        //await context.Response.WriteAsync("Error");
-    }));
-}
-
-app.Map("/divide/{a}/{b}", (int a, int b) => $"{a/b}");
-
-app.Map("/error/{Code}", (int Code) => $"Error: {Code}");
-
-
-app.Map("/admin1", (HttpContext context) =>
-{
-    return $"You are currently in an admin page";
+    Console.WriteLine("Кто-то зашел");
+    return;
 });
 
-app.Map("/user1", (HttpContext context) =>
+app.Map("/web3log", async (HttpContext context) =>
 {
-    return $"You are currently in user page";
+
+    return;
 });
-
-app.Map("/AccessDenied", (HttpContext context) =>
-{
-    return $"Access to the page was denied";
-});
-
-app.Map("/myrightsforadmin",(HttpContext context) =>
-{
-    return $"You can ban any user and you can see their MasterCard information and their IP addressess and all of their passwords and...";
-});
-
-app.Map("/myrightsforuser", () => "You can open /user1");
-
-
-
-app.MapGet("/user/{id}", async (int id, UserService userService) =>
-{
-    await Task.Delay(5000);
-    User? user = await userService.GetUser(id);
-    if (user != null) return $"User {user.Name}  Id={user.Id}  Email={user.Email}";
-    else return "User not found";
-}).CacheOutput();
-
-app.MapGet("/lorem", () => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-
 
 
 app.Run();
@@ -466,94 +304,10 @@ class Person
         Role = role;
     }
 }
-class Student
-{
-    public string Name { get; set; }
-    public string Group { get; set; }
-    public Student(string Name, string Group)
-    {
-        this.Name = Name;
-        this.Group = Group;
-    }
-}
 class Role
 {
     public string Name { get; set; }
     public Role(string name) => Name = name;
 }
 
-record Item(int id, string description);
-
-public class ApplicationContext : DbContext
-{
-    public DbSet<User> Users { get; set; } = null!;
-    public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options) =>
-        Database.EnsureCreated();
-}
-
-//внутренний кэш
-public class UserService
-{
-    ApplicationContext db;
-    IMemoryCache cache;
-    public UserService(ApplicationContext context, IMemoryCache memoryCache)
-    {
-        db = context;
-        cache = memoryCache;
-    }
-    public async Task<User?> GetUser(int id)
-    {
-        cache.TryGetValue(id, out User? user);
-        if (user == null)
-        {
-            user = await db.Users.FindAsync(id);
-            if (user != null)
-            {
-                Console.WriteLine($"{user.Name} извлечен из базы данных");
-                cache.Set(user.Id, user, new MemoryCacheEntryOptions().SetAbsoluteExpiration(TimeSpan.FromMinutes(5)));
-            }
-        }
-        else
-        {
-            Console.WriteLine($"{user.Name} извлечен из кэша");
-        }
-        return user;
-    }
-}
-
-//распределенный кэш
-/*public class UserService
-{
-    ApplicationContext db;
-    IDistributedCache cache;
-    public UserService(ApplicationContext context, IDistributedCache distributedCache)
-    {
-        db = context;
-        cache = distributedCache;
-    }
-    public async Task<User?> GetUser(int id)
-    {
-        User? user = null;
-        var userString = await cache.GetStringAsync(id.ToString());
-        if (userString != null) user = JsonSerializer.Deserialize<User>(userString);
-
-        if (user == null)
-        {
-            user = await db.Users.FindAsync(id);
-            if (user != null)
-            {
-                Console.WriteLine($"{user.Name} извлечен из базы данных");
-                userString = JsonSerializer.Serialize(user);
-                await cache.SetStringAsync(user.Id.ToString(), userString, new DistributedCacheEntryOptions
-                {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(2)
-                });
-            }
-        }
-        else
-        {
-            Console.WriteLine($"{user.Name} извлечен из кэша");
-        }
-        return user;
-    }
-}*/
+//record Item(int id, string description);

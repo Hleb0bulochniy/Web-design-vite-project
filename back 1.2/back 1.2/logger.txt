@@ -77,1137 +77,206 @@ Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Application startup exception
-Hosting failed to start
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Error unprotecting the session cookie.
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 An unhandled exception has occurred while executing the request.
 An unhandled exception has occurred while executing the request.
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Connection id "0HN2MUJAPRCD8", Request id "0HN2MUJAPRCD8:0000000B": An unhandled exception was thrown by the application.
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-An unhandled exception has occurred while executing the request.
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-An unhandled exception has occurred while executing the request.
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-An unhandled exception has occurred while executing the request.
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-An unhandled exception has occurred while executing the request.
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-An unhandled exception has occurred while executing the request.
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
 Now listening on: https://localhost:7287
 Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-userrole: tom@gmail.com
-userrole: tom@gmail.com
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-userrole: System.Security.Claims.ClaimsIdentity
-userrole: System.Security.Claims.ClaimsIdentity
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-userrole: Role
-userrole: Role
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-userrole: True
-userrole: True
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Application startup exception
-Hosting failed to start
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-An unhandled exception has occurred while executing the request.
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (23ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
-SELECT TOP(1) [u].[id], [u].[email], [u].[name], [u].[password]
-FROM [Users] AS [u]
-WHERE [u].[id] = @__p_0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
-SELECT TOP(1) [u].[id], [u].[email], [u].[name], [u].[password]
-FROM [Users] AS [u]
-WHERE [u].[id] = @__p_0
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (28ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
-SELECT TOP(1) [u].[id], [u].[email], [u].[name], [u].[password]
-FROM [Users] AS [u]
-WHERE [u].[id] = @__p_0
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
-SELECT TOP(1) [u].[id], [u].[email], [u].[name], [u].[password]
-FROM [Users] AS [u]
-WHERE [u].[id] = @__p_0
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (24ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
-SELECT TOP(1) [u].[id], [u].[email], [u].[name], [u].[password]
-FROM [Users] AS [u]
-WHERE [u].[id] = @__p_0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (29ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
-SELECT TOP(1) [u].[id], [u].[email], [u].[name], [u].[password]
-FROM [Users] AS [u]
-WHERE [u].[id] = @__p_0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Application startup exception
-Hosting failed to start
-Application startup exception
-Hosting failed to start
-Application startup exception
-Hosting failed to start
-Application startup exception
-Hosting failed to start
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Unable to configure browser refresh script injection on the response. This may have been caused by the response's Content-Encoding: 'br'. Consider disabling response compression.
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Application startup exception
-Hosting failed to start
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (37ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
-SELECT TOP(1) [u].[id], [u].[email], [u].[name], [u].[password]
-FROM [Users] AS [u]
-WHERE [u].[id] = @__p_0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (27ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
-SELECT TOP(1) [u].[id], [u].[email], [u].[name], [u].[password]
-FROM [Users] AS [u]
-WHERE [u].[id] = @__p_0
-Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-SELECT 1
-Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-
-IF EXISTS
-    (SELECT *
-     FROM [sys].[objects] o
-     WHERE [o].[type] = 'U'
-     AND [o].[is_ms_shipped] = 0
-     AND NOT EXISTS (SELECT *
-         FROM [sys].[extended_properties] AS [ep]
-         WHERE [ep].[major_id] = [o].[object_id]
-             AND [ep].[minor_id] = 0
-             AND [ep].[class] = 1
-             AND [ep].[name] = N'microsoft_database_tools_support'
-    )
-)
-SELECT 1 ELSE SELECT 0
-Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
-SELECT TOP(1) [u].[id], [u].[email], [u].[name], [u].[password]
-FROM [Users] AS [u]
-WHERE [u].[id] = @__p_0
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: https://localhost:7287
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Failed to determine the https port for redirect.
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Failed to determine the https port for redirect.
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Failed to determine the https port for redirect.
-An unhandled exception has occurred while executing the request.
-Now listening on: http://localhost:5177
-Application started. Press Ctrl+C to shut down.
-Hosting environment: Development
-Content root path: C:\Users\sacho\source\repos\back 1.2\back 1.2
-Failed to determine the https port for redirect.
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
