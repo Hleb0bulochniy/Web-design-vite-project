@@ -10,6 +10,8 @@ namespace back_1._2.Models
         public Item item { get; set; } = null!;
         public int itemId { get; set; }
         public bool isFavourite { get; set; }
+        public bool isInCart { get; set; }
+        public int itemInCartNumber { get; set; }
 
         public User User { get; set; } = null!;
         public int UserId { get; set; }

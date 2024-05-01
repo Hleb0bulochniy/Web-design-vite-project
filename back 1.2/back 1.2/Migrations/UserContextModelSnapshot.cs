@@ -121,7 +121,13 @@ namespace back_1._2.Migrations
                     b.Property<bool>("isFavourite")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("isInCart")
+                        .HasColumnType("bit");
+
                     b.Property<int>("itemId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("itemInCartNumber")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

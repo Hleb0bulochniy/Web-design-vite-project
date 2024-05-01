@@ -11,3 +11,7 @@ export const apiIns = axios.create({
 export function productApi(d: string) {
     return apiIns.get(d);
 }
+
+export function getNumInCartById(id: number) {
+    return apiIns.get(`getNumInCartById?idToGet=${id}`);
+  }

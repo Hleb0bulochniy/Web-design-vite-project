@@ -1,5 +1,7 @@
 using Azure;
 using back_1._2;
+using back_1._2.Data;
+using back_1._2.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -72,7 +74,7 @@ app.UseHttpsRedirection();
 app.MapControllers();
 
 //маршруты из прошлых лабораторных
-app.Map("/hello", SendHello);
+//app.Map("/hello", SendHello);
 //app.Map("/", () => Results.Content("test  тест", "text/plain", System.Text.Encoding.UTF8));
 //app.Map("/hello", () => Results.Text("Hello World"));
 app.Map("/json1", () => Results.Json(new { name = "Tom", age = 37 }));
@@ -247,7 +249,7 @@ app.Map("/4", (HttpContext context) =>
     return $"4";
 });
 
-app.Map("/web2additem", async (HttpContext context) =>
+/*app.Map("/web2additem", async (HttpContext context) =>
 {
     Web2item pine = new Web2item(1, "Хвоя", "549", "Натуральное мыло со вкусом хвои - вдохновленное свежестью лесных прогулок. Очищает кожу, оставляя нежный аромат свежести и спокойствия. Погрузитесь в атмосферу природы каждый раз, когда пользуетесь этим мылом.", "https://localhost:7287/pine.png");
     Web2item blue = new Web2item(2, "Голубика", "549", "Нежное мыло с ароматом голубики - воплощение летней свежести и яркости. Очищает кожу, оставляя приятное ощущение мягкости и аромата свежесорванной ягоды. Придайте своему уходу особый шарм с этим ароматическим мылом!", "https://localhost:7287/blueberry.png");
@@ -262,7 +264,83 @@ app.Map("/web2additem", async (HttpContext context) =>
     context.Response.ContentType = "application/json";
     await context.Response.WriteAsync(jsonResult);
     return;
+});*/
+
+app.Map("/web2additem", async (HttpContext context) =>
+{
+    UserContext context1 = new UserContext();
+    List<Item> itemList = new List<Item>();
+    //for (int i = 0; i < context.Items.Count(); i++)
+    itemList = context1.Items.ToList();
+    var jsonResult = JsonSerializer.Serialize(itemList);
+    context.Response.ContentType = "application/json";
+    context.Response.WriteAsync(jsonResult);
+    return;
 });
+
+app.Map("/getNumInCartById", [Authorize] async (HttpContext context, [FromBody] int idToGet ) =>
+{
+    string authorizationHeader = context.Request.Headers["Authorization"];
+    string token = authorizationHeader.Replace("Bearer ", "");
+    var handler = new JwtSecurityTokenHandler();
+    var jwtToken = handler.ReadJwtToken(token);
+    string userId = jwtToken.Claims.First(claim => claim.Type == ClaimTypes.NameIdentifier).Value;
+
+    UserContext context1 = new UserContext();
+    ItemsInUser item = context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet));
+    return item.itemInCartNumber;
+});
+
+app.Map("/addNumInCartById", [Authorize] async (HttpContext context, [FromBody] int idToAdd) =>
+{
+    string authorizationHeader = context.Request.Headers["Authorization"];
+    string token = authorizationHeader.Replace("Bearer ", "");
+    var handler = new JwtSecurityTokenHandler();
+    var jwtToken = handler.ReadJwtToken(token);
+    string userId = jwtToken.Claims.First(claim => claim.Type == ClaimTypes.NameIdentifier).Value;
+
+    UserContext context1 = new UserContext();
+    if (context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToAdd)) == null)
+    {
+        ItemsInUser itemsInUser = new ItemsInUser();
+        itemsInUser.UserId = int.Parse(userId);
+        itemsInUser.isInCart = false;
+        itemsInUser.isFavourite = false;
+        itemsInUser.itemInCartNumber = 1;
+        itemsInUser.itemId = idToAdd;
+        context1.Add(itemsInUser);
+        context1.SaveChanges();
+        return "Добавлен новый";
+    }
+    else
+    {
+        ItemsInUser itemsInUser = context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToAdd));
+        context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToAdd)).itemInCartNumber++;
+        context1.SaveChanges();
+        return "Добавлен +1";
+    }
+});
+
+app.Map("/minusNumInCartById", [Authorize] async (HttpContext context, [FromBody] int idToAdd) =>
+{
+    string authorizationHeader = context.Request.Headers["Authorization"];
+    string token = authorizationHeader.Replace("Bearer ", "");
+    var handler = new JwtSecurityTokenHandler();
+    var jwtToken = handler.ReadJwtToken(token);
+    string userId = jwtToken.Claims.First(claim => claim.Type == ClaimTypes.NameIdentifier).Value;
+
+    UserContext context1 = new UserContext();
+    if (context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToAdd)) != null)
+    {
+        ItemsInUser itemsInUser = context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToAdd));
+        context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToAdd)).itemInCartNumber--;
+        context1.SaveChanges();
+        return "Удален -1";
+    }
+    return"";
+});
+
+
 
 app.Map("/hrt", [Authorize] async (HttpContext context) =>
 {
@@ -278,10 +356,7 @@ app.Map("/web3log", async (HttpContext context) =>
 
 
 app.Run();
-IResult SendHello()
-{
-    return Results.Text("Hello ASP.NET Core");
-}
+
 
 public class AuthOptions
 {

@@ -280,3 +280,88 @@ Now listening on: http://localhost:5177
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Development
 Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\BackEnd\11 лаба (номер 7)\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2
+An unhandled exception has occurred while executing the request.
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2
+An unhandled exception has occurred while executing the request.
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2
+An unhandled exception has occurred while executing the request.
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2
+Now listening on: https://localhost:7287
+Now listening on: http://localhost:5177
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\sacho\OneDrive\Рабочий стол\Здесь точно ничего интересного\Университет\2 курс 4 семестр\Web\Проект\back 1.2\back 1.2

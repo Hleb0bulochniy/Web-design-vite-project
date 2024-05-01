@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r11wE+JHHP2Op015Inr4hDuafcn86Mv5LLgiwMQGnxg4NDuA/9Na8HoOYV5tPE7YstU4m8VS5XAXO+fotoPcpg==",
+  "dgSpecHash": "RTREbJxa/0ppVMy9uqgMjjSX0AUzvAKnbWs6QUhNgVlVEFsYGxBlFx6LniDipRTMIXQtjHhF5aYLQc59rV9UKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\back 1.2.csproj",
+  "projectFilePath": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\back 1.2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sacho\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\sacho\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

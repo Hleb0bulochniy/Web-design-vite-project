@@ -1,6 +1,9 @@
 import Card from 'react-bootstrap/Card';
 
+
+
 interface CardProps{
+    id: number;
     name: string;
     description: string;
     price: string;
@@ -8,7 +11,8 @@ interface CardProps{
     button: JSX.Element;
 }
 
-function Card1({ name, description, image, button }: CardProps) {
+
+function Card1({ id, name, description, image, button }: CardProps) {
     return (
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={image} />

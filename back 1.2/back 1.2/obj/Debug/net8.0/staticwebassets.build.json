@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "U4sXkDlWMvZ7Ucl6gl4rBaTHJxQ3iOZKQne+UWeAiZo=",
+  "Hash": "QsZaq5r2n9mwPcNRiN+Hwr+8SXqt5vh02YN9dZcsYqk=",
   "Source": "back 1.2",
   "BasePath": "_content/back 1.2",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "back 1.2\\wwwroot",
       "Source": "back 1.2",
-      "ContentRoot": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\",
       "BasePath": "_content/back 1.2",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\wwwroot\\blueberry.png",
+      "Identity": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\blueberry.png",
       "SourceId": "back 1.2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\",
       "BasePath": "_content/back 1.2",
       "RelativePath": "blueberry.png",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\blueberry.png"
     },
     {
-      "Identity": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\wwwroot\\cat.jpg",
+      "Identity": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\cat.jpg",
       "SourceId": "back 1.2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\",
       "BasePath": "_content/back 1.2",
       "RelativePath": "cat.jpg",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\cat.jpg"
     },
     {
-      "Identity": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\wwwroot\\coffee.png",
+      "Identity": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\coffee.png",
       "SourceId": "back 1.2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\",
       "BasePath": "_content/back 1.2",
       "RelativePath": "coffee.png",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\coffee.png"
     },
     {
-      "Identity": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\index.html",
       "SourceId": "back 1.2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\",
       "BasePath": "_content/back 1.2",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\wwwroot\\pine.png",
+      "Identity": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\pine.png",
       "SourceId": "back 1.2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\",
       "BasePath": "_content/back 1.2",
       "RelativePath": "pine.png",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\pine.png"
     },
     {
-      "Identity": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\wwwroot\\strawberry.png",
+      "Identity": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\strawberry.png",
       "SourceId": "back 1.2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\BackEnd\\11 лаба (номер 7)\\back 1.2\\back 1.2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\",
       "BasePath": "_content/back 1.2",
       "RelativePath": "strawberry.png",
       "AssetKind": "All",

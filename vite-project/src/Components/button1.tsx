@@ -8,9 +8,6 @@ interface Button1Props {
     fun: React.Dispatch<React.SetStateAction<boolean>>;
   }
 
-  
-
-  
 export function Button1({ state, fun, textBuy, textBought }: Button1Props) {
     const variant = state ? 'success' : 'primary';
     const text = state ? textBought : textBuy;
