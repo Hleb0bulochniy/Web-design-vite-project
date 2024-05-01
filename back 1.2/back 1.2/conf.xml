@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<course>BackEnd</course>
+	<number>
+		<labnum>6</labnum>
+		<realnum>10</realnum>
+	</number>
+</configuration>

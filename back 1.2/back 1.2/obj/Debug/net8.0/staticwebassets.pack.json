@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\wwwroot\\cat.jpg",
+      "PackagePath": "staticwebassets\\cat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\wwwroot\\counter.html",
+      "PackagePath": "staticwebassets\\counter.html"
+    },
+    {
+      "Id": "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\wwwroot\\css\\counter.css",
+      "PackagePath": "staticwebassets\\css\\counter.css"
+    },
+    {
+      "Id": "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\wwwroot\\css\\daytime.css",
+      "PackagePath": "staticwebassets\\css\\daytime.css"
+    },
+    {
+      "Id": "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\wwwroot\\css\\hello.css",
+      "PackagePath": "staticwebassets\\css\\hello.css"
+    },
+    {
+      "Id": "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\wwwroot\\daytime.html",
+      "PackagePath": "staticwebassets\\daytime.html"
+    },
+    {
+      "Id": "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\wwwroot\\hello.html",
+      "PackagePath": "staticwebassets\\hello.html"
+    },
+    {
+      "Id": "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\wwwroot\\js\\counter.js",
+      "PackagePath": "staticwebassets\\js\\counter.js"
+    },
+    {
+      "Id": "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\wwwroot\\js\\daytime.js",
+      "PackagePath": "staticwebassets\\js\\daytime.js"
+    },
+    {
+      "Id": "C:\\Users\\sacho\\source\\repos\\back 1.2\\back 1.2\\wwwroot\\js\\hello.js",
+      "PackagePath": "staticwebassets\\js\\hello.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.back 1.2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.back 1.2.props",
+      "PackagePath": "build\\back 1.2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.back 1.2.props",
+      "PackagePath": "buildMultiTargeting\\back 1.2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.back 1.2.props",
+      "PackagePath": "buildTransitive\\back 1.2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
