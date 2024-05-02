@@ -184,6 +184,8 @@ app.Map("/items10", () => "Index Page");
 //CORS below
 //app.UseCors(builder => builder.WithOrigins("https://localhost:7281").WithHeaders("custom-header").WithMethods("DELETE").AllowCredentials());
 app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+//app.UseCors(builder => builder.WithOrigins("http://localhost:5173").AllowAnyMethod().AllowAnyHeader());
+
 /*app.Run(async (context) =>
 {
     var a = context.Request.Cookies["a"];  // получаем отправленные куки
@@ -278,20 +280,37 @@ app.Map("/web2additem", async (HttpContext context) =>
     return;
 });
 
-app.Map("/getNumInCartById", [Authorize] async (HttpContext context, [FromBody] int idToGet ) =>
+app.UseCors("AllowAnyOrigin");
+
+app.MapGet("/getNumInCartById/{idToGet}", [Authorize] async (int idToGet, HttpContext context) =>
 {
     string authorizationHeader = context.Request.Headers["Authorization"];
     string token = authorizationHeader.Replace("Bearer ", "");
     var handler = new JwtSecurityTokenHandler();
     var jwtToken = handler.ReadJwtToken(token);
     string userId = jwtToken.Claims.First(claim => claim.Type == ClaimTypes.NameIdentifier).Value;
-
     UserContext context1 = new UserContext();
+
+    if (context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet)) == null)
+    {
+        ItemsInUser itemsInUser = new ItemsInUser();
+        itemsInUser.UserId = int.Parse(userId);
+        itemsInUser.isInCart = false;
+        itemsInUser.isFavourite = false;
+        itemsInUser.itemInCartNumber = 1;
+        itemsInUser.itemId = idToGet;
+        context1.Add(itemsInUser);
+        context1.SaveChanges();
+    }
+
+
     ItemsInUser item = context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet));
     return item.itemInCartNumber;
 });
 
-app.Map("/addNumInCartById", [Authorize] async (HttpContext context, [FromBody] int idToAdd) =>
+app.UseCors("AllowAnyOrigin");
+
+app.Map("/addNumInCartById/{idToAdd}", [Authorize] async (HttpContext context, int idToAdd) =>
 {
     string authorizationHeader = context.Request.Headers["Authorization"];
     string token = authorizationHeader.Replace("Bearer ", "");
@@ -321,7 +340,9 @@ app.Map("/addNumInCartById", [Authorize] async (HttpContext context, [FromBody] 
     }
 });
 
-app.Map("/minusNumInCartById", [Authorize] async (HttpContext context, [FromBody] int idToAdd) =>
+app.UseCors("AllowAnyOrigin");
+
+app.Map("/minusNumInCartById/{idToRemove}", [Authorize] async (HttpContext context, int idToRemove) =>
 {
     string authorizationHeader = context.Request.Headers["Authorization"];
     string token = authorizationHeader.Replace("Bearer ", "");
@@ -330,10 +351,10 @@ app.Map("/minusNumInCartById", [Authorize] async (HttpContext context, [FromBody
     string userId = jwtToken.Claims.First(claim => claim.Type == ClaimTypes.NameIdentifier).Value;
 
     UserContext context1 = new UserContext();
-    if (context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToAdd)) != null)
+    if (context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToRemove)) != null)
     {
-        ItemsInUser itemsInUser = context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToAdd));
-        context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToAdd)).itemInCartNumber--;
+        ItemsInUser itemsInUser = context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToRemove));
+        context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToRemove)).itemInCartNumber--;
         context1.SaveChanges();
         return "Удален -1";
     }

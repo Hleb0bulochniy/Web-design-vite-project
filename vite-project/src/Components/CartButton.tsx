@@ -11,11 +11,12 @@ interface Button1Props {
     fun: React.Dispatch<React.SetStateAction<boolean>>;
     inCartNum: number;
     isFavourite: boolean;
+    id: number;
 }
 
 
 
-export function CartButton({ state, fun, textBuy, textBought, inCartNum, isFavourite }: Button1Props) {
+export function CartButton({ state, fun, textBuy, textBought, inCartNum, isFavourite, id }: Button1Props) {
     const variant = state ? 'success' : 'primary';
     const text = state ? textBought : textBuy;
     const num = inCartNum;
