@@ -310,7 +310,7 @@ app.MapGet("/getNumInCartById/{idToGet}", [Authorize] async (int idToGet, HttpCo
 
 app.UseCors("AllowAnyOrigin");
 
-app.Map("/addNumInCartById/{idToAdd}", [Authorize] async (HttpContext context, int idToAdd) =>
+app.MapGet("/addNumInCartById/{idToAdd}", [Authorize] async (int idToAdd, HttpContext context) =>
 {
     string authorizationHeader = context.Request.Headers["Authorization"];
     string token = authorizationHeader.Replace("Bearer ", "");
@@ -342,7 +342,7 @@ app.Map("/addNumInCartById/{idToAdd}", [Authorize] async (HttpContext context, i
 
 app.UseCors("AllowAnyOrigin");
 
-app.Map("/minusNumInCartById/{idToRemove}", [Authorize] async (HttpContext context, int idToRemove) =>
+app.MapGet("/minusNumInCartById/{idToRemove}", [Authorize] async (int idToRemove, HttpContext context) =>
 {
     string authorizationHeader = context.Request.Headers["Authorization"];
     string token = authorizationHeader.Replace("Bearer ", "");

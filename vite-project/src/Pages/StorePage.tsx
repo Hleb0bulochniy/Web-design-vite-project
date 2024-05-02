@@ -33,6 +33,24 @@ export function StorePage() {
         }
     };
 
+    const handleAddClick = async (itemId: number) => {
+        try {
+            const response = await productApiGetItem("addNumInCartById", itemId);
+
+        } catch (error) {
+            console.error("Error fetching numInCart:", error);
+        }
+    };
+
+    const handleRemClick = async (itemId: number) => {
+        try {
+            const response = await productApiGetItem("minusNumInCartById", itemId);
+
+        } catch (error) {
+            console.error("Error fetching numInCart:", error);
+        }
+    };
+
     return (
         <div className="card-container">
             {data?.map((item: webItem) => (
@@ -45,6 +63,9 @@ export function StorePage() {
                         price={item.Price}
                         button={<CartButton
                             state={item.isBought}
+                            rand = {false}
+                            funAdd={() => handleAddClick(item.Id)}
+                            funRem={() => handleRemClick(item.Id)}
                             fun={() => handleBuyClick(item.Id)}
                             textBuy={item.Price}
                             textBought={'В корзине:' + item.numInCart}

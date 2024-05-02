@@ -6,9 +6,12 @@ import React, { useState } from 'react';
 
 interface Button1Props {
     state: boolean;
+    rand: boolean;
     textBuy: string;
     textBought: string;
     fun: React.Dispatch<React.SetStateAction<boolean>>;
+    funAdd: React.Dispatch<React.SetStateAction<boolean>>;
+    funRem: React.Dispatch<React.SetStateAction<boolean>>;
     inCartNum: number;
     isFavourite: boolean;
     id: number;
@@ -16,7 +19,7 @@ interface Button1Props {
 
 
 
-export function CartButton({ state, fun, textBuy, textBought, inCartNum, isFavourite, id }: Button1Props) {
+export function CartButton({ state, fun, funAdd, funRem, textBuy, textBought, inCartNum, isFavourite, id , rand}: Button1Props) {
     const variant = state ? 'success' : 'primary';
     const text = state ? textBought : textBuy;
     const num = inCartNum;
@@ -27,10 +30,10 @@ export function CartButton({ state, fun, textBuy, textBought, inCartNum, isFavou
         return (
             <>
                 <Button variant={variant} onClick={() => { }}>{textBought}</Button>
-                <Button variant="primary" onClick={() => {inCartNum += 1; textBought = "В корзине" + {inCartNum}; fun(state);}}>
+                <Button variant="primary" onClick={() => {inCartNum += 1; textBought = "В корзине" + {inCartNum}; funAdd(!rand);}}>
                     +
                 </Button>
-                <Button variant="danger" onClick={() => {inCartNum -= 1; textBought = "В корзине" + {inCartNum} }}>
+                <Button variant="danger" onClick={() => {inCartNum -= 1; textBought = "В корзине" + {inCartNum}; funRem(!rand); }}>
                     -
                 </Button>
             </>
