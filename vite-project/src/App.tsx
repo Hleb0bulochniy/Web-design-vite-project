@@ -27,7 +27,7 @@ function App() {
   return (
     <BrowserRouter>
       <NavigationPage />
-      <StorePage />
+
       <Button2 />
       <h1>{s}</h1>
       <Auth />
@@ -35,8 +35,8 @@ function App() {
       <ButtonReg />
       <Check />
       <Routes>
-        <Route path='*' element={<Navigate to="/home" />} />
-        <Route path='/' element={<Navigate to="/home" />} />
+        <Route path='*' element={<Navigate to="/error" />} />
+        <Route path='/' element={<Navigate to="/error" />} />
         <Route path='/home' element={<HomePage />} />
         <Route path='/error' element={<ErrorPage />} />
         <Route path="/error/:id" element={<ErrorPage />} />

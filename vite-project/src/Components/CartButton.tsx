@@ -5,35 +5,33 @@ import { increment, decrement } from '../Redux/CounterSlice';
 import React, { useState } from 'react';
 
 interface Button1Props {
-    state: boolean;
+    state?: boolean;
     rand: boolean;
     textBuy: string;
     textBought: string;
-    fun: React.Dispatch<React.SetStateAction<boolean>>;
+    funBuy: React.Dispatch<React.SetStateAction<boolean>>;
     funAdd: React.Dispatch<React.SetStateAction<boolean>>;
     funRem: React.Dispatch<React.SetStateAction<boolean>>;
-    inCartNum: number;
+    inCartNum?: number;
     isFavourite: boolean;
     id: number;
 }
 
 
 
-export function CartButton({ state, fun, funAdd, funRem, textBuy, textBought, inCartNum, isFavourite, id , rand}: Button1Props) {
+export function CartButton({ state, funAdd, funRem, funBuy, textBuy, textBought, inCartNum, isFavourite, id , rand}: Button1Props) {
     const variant = state ? 'success' : 'primary';
     const text = state ? textBought : textBuy;
-    const num = inCartNum;
-    const value = useAppSelector((state) => state.counter.value);
-    const dispatch = useAppDispatch();
-    console.log(inCartNum);
+
+
     if (state) {
         return (
             <>
                 <Button variant={variant} onClick={() => { }}>{textBought}</Button>
-                <Button variant="primary" onClick={() => {inCartNum += 1; textBought = "В корзине" + {inCartNum}; funAdd(!rand);}}>
+                <Button variant="primary" onClick={() => {funAdd(!rand);}}>
                     +
                 </Button>
-                <Button variant="danger" onClick={() => {inCartNum -= 1; textBought = "В корзине" + {inCartNum}; funRem(!rand); }}>
+                <Button variant="danger" onClick={() => {funRem(!rand);}}>
                     -
                 </Button>
             </>
@@ -41,7 +39,7 @@ export function CartButton({ state, fun, funAdd, funRem, textBuy, textBought, in
     }
     if (!state) {
         return (
-            <Button variant={variant} onClick={() => { fun(!state); inCartNum += 1; console.log(num)}}>{text}</Button>
+            <Button variant={variant} onClick={() => {funBuy(!rand)}}>{text}</Button>
         );
     }
 }

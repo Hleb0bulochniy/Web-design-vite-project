@@ -280,9 +280,29 @@ app.Map("/web2additem", async (HttpContext context) =>
     return;
 });
 
-app.UseCors("AllowAnyOrigin");
+app.Map("/web2additemForCart", [Authorize] async (HttpContext context) =>
+{
+    string authorizationHeader = context.Request.Headers["Authorization"];
+    string token = authorizationHeader.Replace("Bearer ", "");
+    var handler = new JwtSecurityTokenHandler();
+    var jwtToken = handler.ReadJwtToken(token);
+    string userId = jwtToken.Claims.First(claim => claim.Type == ClaimTypes.NameIdentifier).Value;
+    UserContext context1 = new UserContext();
 
-app.MapGet("/getNumInCartById/{idToGet}", [Authorize] async (int idToGet, HttpContext context) =>
+
+    List<ItemsInUser> itemInUserList = new List<ItemsInUser>();
+    foreach (var item in context1.ItemsInUser)
+    {
+        if (context1.ItemsInUser.FirstOrDefault(u => u.UserId == int.Parse(userId)) != null) return;
+    }
+
+    var jsonResult = JsonSerializer.Serialize(itemInUserList);
+    context.Response.ContentType = "application/json";
+    context.Response.WriteAsync(jsonResult);
+    return;
+});
+
+app.MapGet("/getInfoById/{idToGet}", [Authorize] async (int idToGet, HttpContext context) =>
 {
     string authorizationHeader = context.Request.Headers["Authorization"];
     string token = authorizationHeader.Replace("Bearer ", "");
@@ -297,14 +317,44 @@ app.MapGet("/getNumInCartById/{idToGet}", [Authorize] async (int idToGet, HttpCo
         itemsInUser.UserId = int.Parse(userId);
         itemsInUser.isInCart = false;
         itemsInUser.isFavourite = false;
+        itemsInUser.itemInCartNumber = 0;
+        itemsInUser.itemId = idToGet;
+        return itemsInUser;
+    }
+    else
+    {
+        ItemsInUser item = context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet));
+        return item;
+    }
+});
+
+app.MapGet("/getNumInCartById/{idToGet}", [Authorize] async (int idToGet, HttpContext context) =>
+{
+    string authorizationHeader = context.Request.Headers["Authorization"];
+    string token = authorizationHeader.Replace("Bearer ", "");
+    var handler = new JwtSecurityTokenHandler();
+    var jwtToken = handler.ReadJwtToken(token);
+    string userId = jwtToken.Claims.First(claim => claim.Type == ClaimTypes.NameIdentifier).Value;
+    UserContext context1 = new UserContext();
+
+    if (context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet)) == null)
+    {
+        Console.WriteLine("1");
+        ItemsInUser itemsInUser = new ItemsInUser();
+        itemsInUser.UserId = int.Parse(userId);
+        itemsInUser.isInCart = true;
+        itemsInUser.isFavourite = false;
         itemsInUser.itemInCartNumber = 1;
         itemsInUser.itemId = idToGet;
         context1.Add(itemsInUser);
         context1.SaveChanges();
     }
 
-
+    Console.WriteLine("2");
     ItemsInUser item = context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet));
+    context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet)).itemInCartNumber++;
+    context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet)).isInCart = true;
+    context1.SaveChanges();
     return item.itemInCartNumber;
 });
 
@@ -323,7 +373,7 @@ app.MapGet("/addNumInCartById/{idToAdd}", [Authorize] async (int idToAdd, HttpCo
     {
         ItemsInUser itemsInUser = new ItemsInUser();
         itemsInUser.UserId = int.Parse(userId);
-        itemsInUser.isInCart = false;
+        itemsInUser.isInCart = true;
         itemsInUser.isFavourite = false;
         itemsInUser.itemInCartNumber = 1;
         itemsInUser.itemId = idToAdd;
@@ -355,6 +405,10 @@ app.MapGet("/minusNumInCartById/{idToRemove}", [Authorize] async (int idToRemove
     {
         ItemsInUser itemsInUser = context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToRemove));
         context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToRemove)).itemInCartNumber--;
+        if (context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToRemove)).itemInCartNumber == 0)
+        {
+            context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToRemove)).isInCart = false;
+        }
         context1.SaveChanges();
         return "Удален -1";
     }

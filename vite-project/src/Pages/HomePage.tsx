@@ -1,3 +1,7 @@
+import { StorePage } from "./StorePage";
+
 export function HomePage(){
-    return(<h1>Home</h1>)
+    return(
+        <StorePage />
+    )
 }
