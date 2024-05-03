@@ -4,11 +4,13 @@ import Form from 'react-bootstrap/Form';
 import { useAppDispatch } from '../Redux/Hooks';
 import { auth } from '../Redux/AuthFetch';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export function Auth() {
   const dispatch = useAppDispatch();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const s = useNavigate();
 
   const handleClick = () => {
     dispatch(
@@ -44,6 +46,7 @@ export function Auth() {
       <Button variant="primary" onClick={handleClick}>
         Войти
       </Button>
+      <Button variant="link" onClick={() => s("/registration")}>У меня нет аккаунта</Button>
     </>
   );
 }

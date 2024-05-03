@@ -1,8 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from "react-bootstrap";
-import { useAppDispatch, useAppSelector } from '../Redux/Hooks';
-import { increment, decrement } from '../Redux/CounterSlice';
-import React, { useState } from 'react';
+import React from 'react';
 
 interface Button1Props {
     state?: boolean;

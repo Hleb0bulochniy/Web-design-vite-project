@@ -1,3 +1,4 @@
+import { auth } from './AuthFetch';
 import { registerRequest, registerSuccess, registerFailure } from './RegistrationSlice';
 
 interface RegisterPayload {
@@ -7,7 +8,7 @@ interface RegisterPayload {
     password2: string;
   }
 
-export const register = (payload: RegisterPayload) => async (dispatch: any) => {
+export const register = (payload: RegisterPayload, email: string, password : string) => async (dispatch: any) => {
   dispatch(registerRequest());
   try {
     const response = await fetch('https://localhost:7287/UserRegistrationWeb', {
@@ -17,11 +18,18 @@ export const register = (payload: RegisterPayload) => async (dispatch: any) => {
       },
       body: JSON.stringify(payload),
     });
-    const result = await response.json();
+    console.log("1");
+    const result = await response;
     if (response.ok) {
+      console.log("2");
+      dispatch(auth({
+        email,
+        password,
+      }))
+      console.log("3");
       dispatch(registerSuccess());
     } else {
-      dispatch(registerFailure(result.error || 'Registration failed'));
+      dispatch(registerFailure('Registration failed'));
     }
   } catch (error) {
     dispatch(registerFailure('Registration failed'));

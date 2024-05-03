@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import { productApiGetItem } from '../Api/Api';
 import { CartButton } from './CartButton';
-import { redirect, useNavigate, useNavigation } from "react-router-dom";
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -33,46 +32,32 @@ function Card1({ id, name, description, image, price }: CardProps) {
         productApiGetItem("getInfoById", id).then(res => setData(res.data));
     }, [data]);
 
-    /*const handleBuyClick = async (itemId: number) => {
-        try {
-            const response = await productApiGetItem("getNumInCartById", itemId);
-            const data?.itemInCartNumber = response.data;
-        } catch (error) {
-            console.error("Error fetching numInCart:", error);
-        }
-    };*/
-    
-
-    function goTo(d? :string) {
-        window.location.href = "/" + d;
-      }
-
     const handleBuyClick = async (itemId: number) => {
         try {
-            const response = await productApiGetItem("getNumInCartById", itemId);
+            await productApiGetItem("getNumInCartById", itemId);
         } catch (error) {
             console.error("Error fetching1 numInCart:", error);
-            s("/error");
+            window.location.href = "/login";
         }
     };
 
     const handleAddClick = async (itemId: number) => {
         try {
-            const response = await productApiGetItem("addNumInCartById", itemId);
+            await productApiGetItem("addNumInCartById", itemId);
 
         } catch (error) {
             console.error("Error fetching2 numInCart:", error);
-            goTo("error");
+            s("/login");
         }
     };
 
     const handleRemClick = async (itemId: number) => {
         try {
-            const response = await productApiGetItem("minusNumInCartById", itemId);
+            await productApiGetItem("minusNumInCartById", itemId);
 
         } catch (error) {
             console.error("Error fetching3 numInCart:", error);
-            goTo("error");
+            s("/login");
         }
     };
 
@@ -94,7 +79,7 @@ function Card1({ id, name, description, image, price }: CardProps) {
                     //fun={() => setData()}
                     textBuy={price}
                     textBought={'В корзине:' + data?.itemInCartNumber}
-                    inCartNum={data?.itemInCartNumber} // Передаем numInCart в компонент CartButton
+                    inCartNum={data?.itemInCartNumber}
                     isFavourite={false}
                     id={id} />
             </Card.Body>

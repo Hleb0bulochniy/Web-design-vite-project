@@ -302,6 +302,11 @@ app.Map("/web2additemForCart", [Authorize] async (HttpContext context) =>
     return;
 });
 
+app.MapGet("/checkAuth", [Authorize] async (HttpContext context) =>
+{
+    return;
+});
+
 app.MapGet("/getInfoById/{idToGet}", [Authorize] async (int idToGet, HttpContext context) =>
 {
     string authorizationHeader = context.Request.Headers["Authorization"];
@@ -336,6 +341,7 @@ app.MapGet("/getNumInCartById/{idToGet}", [Authorize] async (int idToGet, HttpCo
     var jwtToken = handler.ReadJwtToken(token);
     string userId = jwtToken.Claims.First(claim => claim.Type == ClaimTypes.NameIdentifier).Value;
     UserContext context1 = new UserContext();
+    ItemsInUser item = context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet));
 
     if (context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet)) == null)
     {
@@ -349,13 +355,14 @@ app.MapGet("/getNumInCartById/{idToGet}", [Authorize] async (int idToGet, HttpCo
         context1.Add(itemsInUser);
         context1.SaveChanges();
     }
-
-    Console.WriteLine("2");
-    ItemsInUser item = context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet));
-    context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet)).itemInCartNumber++;
-    context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet)).isInCart = true;
-    context1.SaveChanges();
-    return item.itemInCartNumber;
+    else
+    {
+        Console.WriteLine("2");
+        context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet)).itemInCartNumber++;
+        context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet)).isInCart = true;
+        context1.SaveChanges();
+    }
+    return;
 });
 
 app.UseCors("AllowAnyOrigin");

@@ -1,0 +1,43 @@
+
+@media (min-width: 768px) {
+    .large-image {
+      width: 402px;
+      height: 263px;
+      margin-bottom: 18px;
+    }
+  
+    .small-image {
+      width: 192px;
+      height: 126px;
+      margin-right: 18px;
+    }
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    position: relative;
+  }
+  
+  .text-container {
+    position: fixed;
+    top: 70px;
+    left: 750px; /* Измените значение, чтобы настроить отступ от правого края изображений */
+    max-width: calc(100% - 1100px); /* Максимальная ширина блока с учетом отступов и ширины изображения */
+    word-wrap: break-word; /* Перенос слов, если они не помещаются */
+}
+
+  @media (max-width: 767px) {
+    .large-image {
+        width: calc((100% - 0px) / 2);
+        height: auto;
+    }
+  
+    .small-image {
+      width: calc((100% - 0px) / 2);
+      height: auto;
+      margin-right: 18;
+      margin-bottom: 18px;
+    }
+  }

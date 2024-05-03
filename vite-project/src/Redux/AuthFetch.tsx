@@ -1,9 +1,9 @@
-import { login, loginRequest, loginFailure  } from "./AuthSlice";
+import { login, loginRequest, loginFailure } from "./AuthSlice";
 
 interface AuthPayload {
-    email: string;
-    password: string;
-  }
+  email: string;
+  password: string;
+}
 
 export const auth = (payload: AuthPayload) => async (dispatch: any) => {
   dispatch(loginRequest());
@@ -18,7 +18,8 @@ export const auth = (payload: AuthPayload) => async (dispatch: any) => {
     const result = await response.json();
     if (response.ok) {
       dispatch(login({ accessToken: result.access_token, refreshToken: result.refresh_token, username: result.username }));
-    localStorage.setItem('accessToken', result.access_token);
+      localStorage.setItem('accessToken', result.access_token);
+      window.location.href = "/home"
     } else {
       dispatch(loginFailure(result.error || 'Registration failed'));
     }

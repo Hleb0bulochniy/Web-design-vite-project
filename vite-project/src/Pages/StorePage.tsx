@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { productApi, productApiGetItem } from "../Api/Api"; // Добавляем productApiGetItem
+import { productApi } from "../Api/Api"; // Добавляем productApiGetItem
 import Card1 from "../Components/Card";
 
 export interface webItem {

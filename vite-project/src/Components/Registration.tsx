@@ -17,7 +17,7 @@ export function ButtonReg() {
         email,
         password,
         password2,
-      })
+      }, email, password)
     );
   };
 

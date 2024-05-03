@@ -222,10 +222,10 @@ namespace back_1._2.Controllers
     }*/
 
     [Route("UserRegistrationWeb")]
-    public class RegistrationWebController : Controller
+    public class RegistrationWebController : Controller //регистрация одинаковых пользователей доступна
     {
         [HttpPost]
-        public string Index7([FromBody] RegisterModel model)
+        public IActionResult Index7([FromBody] RegisterModel model)
         {
             if (model.Password == model.Password2)
             {
@@ -233,11 +233,11 @@ namespace back_1._2.Controllers
                 User user = new User() { Name = model.Name, Email = model.Email, Password = model.Password };
                 context.Users.Add(user);
                 context.SaveChanges();
-                return $"Регистрация прошла успешно";
+                return Ok();
             }
             else
             {
-                return $"Что-то пошло не так";
+                return Ok();
             }
         }
     }
@@ -264,7 +264,7 @@ namespace back_1._2.Controllers
             issuer: AuthOptions.ISSUER,
             audience: AuthOptions.AUDIENCE,
             claims: claims,
-            expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(20)),
+            expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(2)),
             signingCredentials: new SigningCredentials(AuthOptions.GetSymmetricSecurityKey(), SecurityAlgorithms.HmacSha256));
             var encodedJwt = new JwtSecurityTokenHandler().WriteToken(jwt);
 

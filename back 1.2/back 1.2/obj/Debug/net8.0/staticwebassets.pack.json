@@ -1,6 +1,26 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\About1.png",
+      "PackagePath": "staticwebassets\\About1.png"
+    },
+    {
+      "Id": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\About2.png",
+      "PackagePath": "staticwebassets\\About2.png"
+    },
+    {
+      "Id": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\About3.png",
+      "PackagePath": "staticwebassets\\About3.png"
+    },
+    {
+      "Id": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\About4.png",
+      "PackagePath": "staticwebassets\\About4.png"
+    },
+    {
+      "Id": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\About5.png",
+      "PackagePath": "staticwebassets\\About5.png"
+    },
+    {
       "Id": "C:\\Users\\sacho\\OneDrive\\Рабочий стол\\Здесь точно ничего интересного\\Университет\\2 курс 4 семестр\\Web\\Проект\\back 1.2\\back 1.2\\wwwroot\\blueberry.png",
       "PackagePath": "staticwebassets\\blueberry.png"
     },
