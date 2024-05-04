@@ -280,7 +280,7 @@ app.Map("/web2additem", async (HttpContext context) =>
     return;
 });
 
-app.Map("/web2additemForCart", [Authorize] async (HttpContext context) =>
+app.MapGet("/web2additemForCart", [Authorize] async (HttpContext context) =>
 {
     string authorizationHeader = context.Request.Headers["Authorization"];
     string token = authorizationHeader.Replace("Bearer ", "");
@@ -288,15 +288,18 @@ app.Map("/web2additemForCart", [Authorize] async (HttpContext context) =>
     var jwtToken = handler.ReadJwtToken(token);
     string userId = jwtToken.Claims.First(claim => claim.Type == ClaimTypes.NameIdentifier).Value;
     UserContext context1 = new UserContext();
-
-
-    List<ItemsInUser> itemInUserList = new List<ItemsInUser>();
+    List<Item> itemsInCart = new List<Item>();
+    List<int> itemiD = new List<int>();
     foreach (var item in context1.ItemsInUser)
     {
-        if (context1.ItemsInUser.FirstOrDefault(u => u.UserId == int.Parse(userId)) != null) return;
+        if (item.isInCart & item.UserId == int.Parse(userId))
+        {
+            UserContext context2 = new UserContext();
+            itemsInCart.Add(context2.Items.FirstOrDefault(u => (u.Id == item.itemId)));
+        }
     }
-
-    var jsonResult = JsonSerializer.Serialize(itemInUserList);
+    var jsonResult = JsonSerializer.Serialize(itemsInCart);
+    Console.WriteLine(itemsInCart);
     context.Response.ContentType = "application/json";
     context.Response.WriteAsync(jsonResult);
     return;

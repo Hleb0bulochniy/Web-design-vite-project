@@ -12,6 +12,7 @@ import { logOut, loginPlease } from './Redux/AuthSlice';
 import QuestionPage from './Pages/QuestionsPage';
 import { AboutPage } from './Pages/AboutPage';
 import { ContactsPage } from './Pages/ContactsPage';
+import { CartPage } from './Pages/CartPage';
 
 export interface webItem {
   Id: number;
@@ -62,7 +63,7 @@ function App() {
         <Route path='/questions' element={<QuestionPage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/contacts' element={<ContactsPage />} />
-        <Route path='/cart' element={<HomePage />} />
+        <Route path='/cart' element={<CartPage />} />
       </Routes>
     </BrowserRouter>
   )
