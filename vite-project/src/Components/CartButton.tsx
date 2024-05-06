@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from "react-bootstrap";
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface Button1Props {
     state?: boolean;
@@ -20,12 +21,13 @@ interface Button1Props {
 export function CartButton({ state, funAdd, funRem, funBuy, textBuy, textBought, inCartNum, isFavourite, id , rand}: Button1Props) {
     const variant = state ? 'success' : 'primary';
     const text = state ? textBought : textBuy;
+    const s = useNavigate();
 
 
     if (state) {
         return (
             <>
-                <Button variant={variant} onClick={() => { }}>{textBought}</Button>
+                <Button variant={variant} onClick={() => { s("/cart"); }}>{textBought}</Button>
                 <Button variant="primary" onClick={() => {funAdd(!rand);}}>
                     +
                 </Button>

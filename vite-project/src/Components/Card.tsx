@@ -29,14 +29,17 @@ function Card1({ id, name, description, image, price }: CardProps) {
     const dispatch = useAppDispatch();
     const [data, setData] = useState<ItemInUser>();
     const s = useNavigate();
+    const [refreshKey, setRefreshKey] = useState(true);
 
     useEffect(() => {
         productApiGetItem("getInfoById", id).then(res => setData(res.data));
-    }, [data]);
+    }, [refreshKey]);
 
     const handleBuyClick = async (itemId: number) => {
         try {
+
             await productApiGetItem("getNumInCartById", itemId);
+            setRefreshKey(!refreshKey);
         } catch (error) {
             console.error("Error fetching1 numInCart:", error);
             window.location.href = "/login";
@@ -45,8 +48,9 @@ function Card1({ id, name, description, image, price }: CardProps) {
 
     const handleAddClick = async (itemId: number) => {
         try {
+            
             await productApiGetItem("addNumInCartById", itemId);
-
+            setRefreshKey(!refreshKey);
         } catch (error) {
             console.error("Error fetching2 numInCart:", error);
             s("/login");
@@ -55,8 +59,9 @@ function Card1({ id, name, description, image, price }: CardProps) {
 
     const handleRemClick = async (itemId: number) => {
         try {
+            
             await productApiGetItem("minusNumInCartById", itemId);
-
+            setRefreshKey(!refreshKey);
         } catch (error) {
             console.error("Error fetching3 numInCart:", error);
             s("/login");
@@ -65,7 +70,7 @@ function Card1({ id, name, description, image, price }: CardProps) {
     const itemInCartNumber = data?.itemInCartNumber || 0;
     const priceAsNumber = parseFloat(price);
     const sum: number = priceAsNumber * itemInCartNumber;
-    dispatch(ChangeSum(sum))
+    
     return (
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={image} />
@@ -82,7 +87,7 @@ function Card1({ id, name, description, image, price }: CardProps) {
                     funRem={() => handleRemClick(id)}
                     //fun={() => setData()}
                     textBuy={price}
-                    textBought={`В корзине: ${data?.itemInCartNumber} шт. (${sum} руб.)`}
+                    textBought={`В корзине: ${data?.itemInCartNumber}шт(${sum} рублей)`}
                     inCartNum={data?.itemInCartNumber}
                     isFavourite={false}
                     id={id} />
@@ -92,17 +97,18 @@ function Card1({ id, name, description, image, price }: CardProps) {
 }
 
 export function Card2({ id, name, description, image, price }: CardProps) {
-    const dispatch = useAppDispatch();
     const [data, setData] = useState<ItemInUser>();
     const s = useNavigate();
+    const [refreshKey, setRefreshKey] = useState(true);
 
     useEffect(() => {
         productApiGetItem("getInfoById", id).then(res => setData(res.data));
-    }, [data]);
+    }, [refreshKey]);
 
     const handleBuyClick = async (itemId: number) => {
         try {
             await productApiGetItem("getNumInCartById", itemId);
+            setRefreshKey(!refreshKey);
         } catch (error) {
             console.error("Error fetching1 numInCart:", error);
             window.location.href = "/login";
@@ -112,7 +118,7 @@ export function Card2({ id, name, description, image, price }: CardProps) {
     const handleAddClick = async (itemId: number) => {
         try {
             await productApiGetItem("addNumInCartById", itemId);
-
+            setRefreshKey(!refreshKey);
         } catch (error) {
             console.error("Error fetching2 numInCart:", error);
             s("/login");
@@ -122,14 +128,16 @@ export function Card2({ id, name, description, image, price }: CardProps) {
     const handleRemClick = async (itemId: number) => {
         try {
             await productApiGetItem("minusNumInCartById", itemId);
-
+            setRefreshKey(!refreshKey);
         } catch (error) {
             console.error("Error fetching3 numInCart:", error);
             s("/login");
         }
     };
 
-
+    const itemInCartNumber = data?.itemInCartNumber || 0;
+    const priceAsNumber = parseFloat(price);
+    const sum: number = priceAsNumber * itemInCartNumber;
 
     return (
         <Card style={{ width: '18rem' }}>
@@ -147,7 +155,7 @@ export function Card2({ id, name, description, image, price }: CardProps) {
                         funAdd={() => handleAddClick(id)}
                         funRem={() => handleRemClick(id)}
                         textBuy={price}
-                        textBought={'В корзине:' + data?.itemInCartNumber}
+                        textBought={`В корзине: ${data?.itemInCartNumber}шт(${sum} рублей)`}
                         inCartNum={data?.itemInCartNumber}
                         isFavourite={false}
                         id={id}

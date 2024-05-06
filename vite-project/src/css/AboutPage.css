@@ -23,9 +23,9 @@
   .text-container {
     position: fixed;
     top: 70px;
-    left: 750px; /* Измените значение, чтобы настроить отступ от правого края изображений */
-    max-width: calc(100% - 1100px); /* Максимальная ширина блока с учетом отступов и ширины изображения */
-    word-wrap: break-word; /* Перенос слов, если они не помещаются */
+    left: 750px;
+    max-width: calc(100% - 1100px);
+    word-wrap: break-word;
 }
 
   @media (max-width: 767px) {

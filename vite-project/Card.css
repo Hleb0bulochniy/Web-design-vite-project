@@ -2,6 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
+    width: 90%; /* Пример фиксированной ширины контейнера */
+    margin: 0 auto;
   }
   
   .card-item {

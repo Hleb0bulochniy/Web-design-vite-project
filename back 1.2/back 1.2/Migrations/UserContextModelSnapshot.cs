@@ -163,6 +163,10 @@ namespace back_1._2.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("password");
 
+                    b.Property<int>("Sum")
+                        .HasColumnType("int")
+                        .HasColumnName("sum");
+
                     b.HasKey("Id");
 
                     b.ToTable("Users");

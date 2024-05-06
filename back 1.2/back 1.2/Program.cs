@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authentication.OAuth;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -280,6 +281,22 @@ app.Map("/web2additem", async (HttpContext context) =>
     return;
 });
 
+app.MapPost("/Sum2", async (HttpContext context) =>
+{
+    string authorizationHeader = context.Request.Headers["Authorization"];
+    string token = authorizationHeader.Replace("Bearer ", "");
+    var handler = new JwtSecurityTokenHandler();
+    var jwtToken = handler.ReadJwtToken(token);
+    string userId = jwtToken.Claims.First(claim => claim.Type == ClaimTypes.NameIdentifier).Value;
+    UserContext context1 = new UserContext();
+    int sum = context1.Users.FirstOrDefault(u => (u.Id == int.Parse(userId))).Sum;
+    var response = new
+    {
+        sum = sum
+    };
+    context.Response.WriteAsync(sum.ToString());
+});
+
 app.MapGet("/web2additemForCart", [Authorize] async (HttpContext context) =>
 {
     string authorizationHeader = context.Request.Headers["Authorization"];
@@ -357,6 +374,7 @@ app.MapGet("/getNumInCartById/{idToGet}", [Authorize] async (int idToGet, HttpCo
         itemsInUser.itemId = idToGet;
         context1.Add(itemsInUser);
         context1.SaveChanges();
+
     }
     else
     {
@@ -365,6 +383,10 @@ app.MapGet("/getNumInCartById/{idToGet}", [Authorize] async (int idToGet, HttpCo
         context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToGet)).isInCart = true;
         context1.SaveChanges();
     }
+
+    int priceNum = int.Parse(context1.Items.FirstOrDefault(u => (u.Id == idToGet)).Price);
+    context1.Users.FirstOrDefault(u => u.Id == int.Parse(userId)).Sum += priceNum;
+    context1.SaveChanges();
     return;
 });
 
@@ -389,15 +411,18 @@ app.MapGet("/addNumInCartById/{idToAdd}", [Authorize] async (int idToAdd, HttpCo
         itemsInUser.itemId = idToAdd;
         context1.Add(itemsInUser);
         context1.SaveChanges();
-        return "Добавлен новый";
     }
     else
     {
         ItemsInUser itemsInUser = context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToAdd));
         context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToAdd)).itemInCartNumber++;
         context1.SaveChanges();
-        return "Добавлен +1";
+        
     }
+    int priceNum = int.Parse(context1.Items.FirstOrDefault(u => (u.Id == idToAdd)).Price);
+    context1.Users.FirstOrDefault(u => u.Id == int.Parse(userId)).Sum += priceNum;
+    context1.SaveChanges();
+    return "Добавлен +1";
 });
 
 app.UseCors("AllowAnyOrigin");
@@ -419,10 +444,41 @@ app.MapGet("/minusNumInCartById/{idToRemove}", [Authorize] async (int idToRemove
         {
             context1.ItemsInUser.FirstOrDefault(u => (u.UserId == int.Parse(userId) & u.itemId == idToRemove)).isInCart = false;
         }
+        int priceNum = int.Parse(context1.Items.FirstOrDefault(u => (u.Id == idToRemove)).Price);
+        context1.Users.FirstOrDefault(u => u.Id == int.Parse(userId)).Sum -= priceNum;
+        if (context1.Users.FirstOrDefault(u => u.Id == int.Parse(userId)).Sum <= 0)
+        {
+            context1.Users.FirstOrDefault(u => u.Id == int.Parse(userId)).Sum = 0;
+        }
         context1.SaveChanges();
         return "Удален -1";
     }
     return"";
+});
+
+app.MapGet("/Buy", [Authorize] async (HttpContext context) =>
+{
+    string authorizationHeader = context.Request.Headers["Authorization"];
+    string token = authorizationHeader.Replace("Bearer ", "");
+    var handler = new JwtSecurityTokenHandler();
+    var jwtToken = handler.ReadJwtToken(token);
+    string userId = jwtToken.Claims.First(claim => claim.Type == ClaimTypes.NameIdentifier).Value;
+    UserContext context1 = new UserContext();
+
+    foreach (var item in context1.ItemsInUser)
+    {
+        if (item.isInCart & item.UserId == int.Parse(userId))
+        {
+            item.isInCart = false;
+            item.itemInCartNumber = 0;
+            
+        }
+    }
+
+    context1.Users.FirstOrDefault(u => u.Id == int.Parse(userId)).Sum = 0;
+    context1.SaveChanges();
+
+    return "";
 });
 
 

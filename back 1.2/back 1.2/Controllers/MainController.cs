@@ -264,7 +264,7 @@ namespace back_1._2.Controllers
             issuer: AuthOptions.ISSUER,
             audience: AuthOptions.AUDIENCE,
             claims: claims,
-            expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(2)),
+            expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(60)),
             signingCredentials: new SigningCredentials(AuthOptions.GetSymmetricSecurityKey(), SecurityAlgorithms.HmacSha256));
             var encodedJwt = new JwtSecurityTokenHandler().WriteToken(jwt);
 
@@ -295,6 +295,31 @@ namespace back_1._2.Controllers
         {
             Console.WriteLine("Кто-то зашел");
             return Ok();
+        }
+    }
+
+    [Route("Sum")]
+    public class SumController : Controller
+    {
+        [HttpPost]
+        [Authorize]
+        public IActionResult Index10()
+        {
+            string? authorizationHeader = Request.Headers["Authorization"];
+            string token = authorizationHeader.Replace("Bearer ", "");
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            string userId = jwtToken.Claims.First(claim => claim.Type == ClaimTypes.NameIdentifier).Value;
+            UserContext context1 = new UserContext();
+            int sum = context1.Users.FirstOrDefault(u => (u.Id == int.Parse(userId))).Sum;
+            if (sum == null) sum = 0;
+            var response = new
+            {
+                sum = sum
+            };
+            Console.WriteLine(sum);
+            Console.WriteLine(response);
+            return Ok(response);
         }
     }
 

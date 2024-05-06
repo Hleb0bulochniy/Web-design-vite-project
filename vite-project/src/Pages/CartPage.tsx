@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { productApi } from "../Api/Api"; // Добавляем productApiGetItem
-import Card1, { Card2 } from "../Components/Card";
-import { useAppSelector } from "../Redux/Hooks";
+import { Card2 } from "../Components/Card";
+import { useAppDispatch, useAppSelector } from "../Redux/Hooks";
+import { SumUpd } from "../Redux/SumFetch";
+import { useNavigate } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 export interface webItem {
     Id: number;
@@ -13,15 +16,28 @@ export interface webItem {
     numInCart: number;
 }
 
+
 export function CartPage() {
+    const dispatch = useAppDispatch();
     const [data, setData] = useState<webItem[]>([]);
+    const [refreshKey, setRefreshKey] = useState(true);
+    const s = useNavigate();
 
     useEffect(() => {
         productApi("web2additemForCart").then(res => setData(res.data));
+        dispatch(SumUpd());
+    }, [refreshKey]);
 
-    }, []);
+    const handleBuyClick = async () => {
+        try {
+            await productApi("Buy");
+            setRefreshKey(!refreshKey);
+            s("/home");
+        } catch (error) {
+            console.error("Error fetching2 numInCart:", error);
+        }
+    };
 
-    console.log(data);
     const sum = useAppSelector((state) => state.sum.value);
     return (
         <>
@@ -39,8 +55,10 @@ export function CartPage() {
                     </div>
                 ))}
             </div>
-
-            <h1>{sum}</h1>
+            <h1>Сумма: {sum}</h1>
+            <Button variant="primary" onClick={() => {handleBuyClick()}}>
+                    Заказать
+                </Button>
         </>
 
     );

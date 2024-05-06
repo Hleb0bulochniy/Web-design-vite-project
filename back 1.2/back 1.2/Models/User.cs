@@ -14,6 +14,8 @@ namespace back_1._2.Models
         public string Email { get; set; }
         [Column("password")]
         public string Password { get; set; } = null!;
+        [Column("sum")]
+        public int Sum { get; set; }
 
         public ICollection<AddressInUser> AddressInUsers { get; set; } = null!;
         public ICollection<ItemsInUser> ItemsInUser { get; set; } = null!;

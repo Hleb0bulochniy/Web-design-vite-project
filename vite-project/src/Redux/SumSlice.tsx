@@ -14,7 +14,6 @@ export const SumSlice = createSlice({
     reducers: {
       ChangeSum: (state, num: PayloadAction<number>) => {
         state.value = num.payload;
-        console.log(num.payload);
       },
     }
   })
