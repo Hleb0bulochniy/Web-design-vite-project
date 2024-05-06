@@ -22,6 +22,7 @@ export const auth = (payload: AuthPayload) => async (dispatch: any) => {
       window.location.href = "/home"
     } else {
       dispatch(loginFailure(result.error || 'Registration failed'));
+      dispatch(login)
     }
   } catch (error) {
     dispatch(loginFailure('Registration failed'));

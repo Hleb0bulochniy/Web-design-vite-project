@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { productApi } from "../Api/Api"; // Добавляем productApiGetItem
+import { productApi } from "../Api/Api";
 import { Card2 } from "../Components/Card";
 import { useAppDispatch, useAppSelector } from "../Redux/Hooks";
 import { SumUpd } from "../Redux/SumFetch";
